@@ -83,19 +83,9 @@ a{text-decoration:none;color:inherit}
 /* ═══════════ HERO ═══════════ */
 .hero{
   position:relative;overflow:hidden;text-align:center;
-  padding:clamp(80px,12vw,150px) clamp(20px,5vw,48px) clamp(64px,9vw,104px);
-  background:
-    radial-gradient(58% 80% at 50% -12%, #E2ECFF 0%, transparent 62%),
-    radial-gradient(38% 52% at 86% 18%, #DCE9FF 0%, transparent 58%),
-    radial-gradient(40% 54% at 10% 28%, #EAF1FF 0%, transparent 58%),
-    linear-gradient(180deg,#F4F8FF, #fff 78%);
+  padding:clamp(76px,11vw,140px) clamp(20px,5vw,48px) clamp(60px,8vw,96px);
+  background:linear-gradient(180deg,#EEF4FF 0%, #F7FAFF 46%, #fff 100%);
 }
-.hero .blob{position:absolute;border-radius:50%;filter:blur(64px);opacity:.55;pointer-events:none;z-index:0}
-.hero .blob.b1{width:360px;height:360px;background:radial-gradient(circle,#9CC4FF,rgba(10,89,235,.10));top:-100px;right:-50px;animation:float1 13s ease-in-out infinite}
-.hero .blob.b2{width:320px;height:320px;background:radial-gradient(circle,#C4D8FD,rgba(10,89,235,.08));bottom:-120px;left:-50px;animation:float2 15s ease-in-out infinite}
-.hero .blob.b3{width:220px;height:220px;background:radial-gradient(circle,rgba(46,123,255,.35),transparent 70%);top:34px;left:13%;animation:float1 17s ease-in-out infinite}
-@keyframes float1{0%,100%{transform:translateY(0) translateX(0)}50%{transform:translateY(26px) translateX(-16px)}}
-@keyframes float2{0%,100%{transform:translateY(0) translateX(0)}50%{transform:translateY(-28px) translateX(18px)}}
 .hero-inner{position:relative;z-index:1;max-width:860px;margin:0 auto}
 .hero .accent-line{
   width:60px;height:5px;border-radius:5px;margin:0 auto 28px;
@@ -117,16 +107,10 @@ a{text-decoration:none;color:inherit}
 .container{max-width:1240px;margin:0 auto;padding:0 clamp(20px,5vw,48px)}
 .cat-section{padding:clamp(56px,8vw,94px) 0 0;scroll-margin-top:var(--nav-h)}
 .cat-section:last-of-type{padding-bottom:clamp(70px,10vw,120px)}
-.cat-eyebrow{
-  display:inline-flex;align-items:center;gap:9px;
-  font-size:.8rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;
-  color:var(--blue);margin-bottom:10px;
-}
-.cat-eyebrow::before{content:"";width:26px;height:3px;border-radius:3px;background:var(--blue)}
-.cat-head h2{
-  font-size:clamp(1.7rem,4vw,2.5rem);font-weight:800;color:var(--navy);
-  letter-spacing:-.015em;line-height:1.15;
-}
+.cat-head{text-align:center;margin-bottom:34px}
+.cat-name{font-size:clamp(2.4rem,5.6vw,3.6rem);font-weight:800;color:var(--navy);letter-spacing:-.02em;line-height:1.05}
+.cat-line{display:block;width:60px;height:4px;border-radius:4px;margin:18px auto 14px;background:linear-gradient(90deg,var(--blue),var(--blue-300))}
+.cat-sub{font-size:clamp(1.05rem,1.9vw,1.35rem);font-weight:600;color:var(--blue)}
 
 /* why + solutions */
 .cat-intro{
@@ -209,7 +193,6 @@ a{text-decoration:none;color:inherit}
 
 <!-- ═══ HERO ═══ -->
 <section class="hero">
-  <span class="blob b1"></span><span class="blob b2"></span><span class="blob b3"></span>
   <div class="hero-inner">
     <div class="accent-line"></div>
     <h1>הלקוחות <span class="grad">שלנו</span></h1>
@@ -228,7 +211,7 @@ const CHECK = '<svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke
 const CATEGORIES = [
   {
     id:'organizations', title:'ארגונים', dir:'logos/org',
-    why:'ארגונים וחברות בוחרים ב-יֵדע כדי להפוך ידע פנים-ארגוני לחוויית למידה אחת, מסודרת ומדידה — להדריך עובדים, לקלוט מצטרפים חדשים ולשמר ידע מקצועי. הכול בפלטפורמה אחת, עם ממשק ניהול נגיש, מיתוג מלא של הארגון ובקרת ביצועים בזמן אמת.',
+    why:'ארגונים וחברות בוחרים בידע כדי להפוך ידע פנים-ארגוני לחוויית למידה אחת, מסודרת ומדידה — להדריך עובדים, לקלוט מצטרפים חדשים ולשמר ידע מקצועי. הכול בפלטפורמה אחת, עם ממשק ניהול נגיש, מיתוג מלא של הארגון ובקרת ביצועים בזמן אמת.',
     solutions:[
       'הדרכות עובדים, אונבורדינג ורענוני ידע במערכת אחת',
       'למידה היברידית: וידאו, שידורים חיים, מבחנים וסקרים',
@@ -260,7 +243,7 @@ const CATEGORIES = [
   },
   {
     id:'colleges', title:'מכללות', dir:'logos/college',
-    why:'מכללות ומוסדות לימוד בוחרים ב-יֵדע כי הוא נותן קמפוס דיגיטלי שלם — הקמה, ניהול ושיווק של קורסים — עם חוויית למידה שנבנתה על בסיס שנות מחקר. הסטודנטים מקבלים חוויה מושלמת, והצוות האקדמי מקבל ממשק פשוט שמרכז קורסים, מרצים, תשלומים ותעודות במקום אחד.',
+    why:'מכללות ומוסדות לימוד בוחרים בידע כי הוא נותן קמפוס דיגיטלי שלם — הקמה, ניהול ושיווק של קורסים — עם חוויית למידה שנבנתה על בסיס שנות מחקר. הסטודנטים מקבלים חוויה מושלמת, והצוות האקדמי מקבל ממשק פשוט שמרכז קורסים, מרצים, תשלומים ותעודות במקום אחד.',
     solutions:[
       'הקמה וניהול של קורסים דיגיטליים, כיתות ומסלולי לימוד',
       'מנגנון תשלומים מובנה (Tranzila / Cardcom) ומכירת קורסים',
@@ -294,7 +277,7 @@ const CATEGORIES = [
   },
   {
     id:'amutot', title:'עמותות', dir:'logos/amutot',
-    why:'עמותות וארגונים חברתיים בוחרים ב-יֵדע כדי להנגיש ידע לקהל רחב — מתנדבים, חברי קהילה וצוותים — בעלות נגישה ובניהול פשוט. המערכת מאפשרת להפיץ הדרכות, להכשיר מתנדבים ולשמר ידע ארגוני, בלי תלות במשאבים טכניים.',
+    why:'עמותות וארגונים חברתיים בוחרים בידע כדי להנגיש ידע לקהל רחב — מתנדבים, חברי קהילה וצוותים — בעלות נגישה ובניהול פשוט. המערכת מאפשרת להפיץ הדרכות, להכשיר מתנדבים ולשמר ידע ארגוני, בלי תלות במשאבים טכניים.',
     solutions:[
       'הכשרת מתנדבים, צוותים וקהילות בפלטפורמה אחת',
       'למידה היברידית: וידאו, שידורים חיים ומבחנים',
@@ -315,7 +298,7 @@ const CATEGORIES = [
   },
   {
     id:'creators', title:'יוצרי תוכן', dir:'logos/creators',
-    why:'יוצרי תוכן, מרצים ומומחים בוחרים ב-יֵדע כדי להפוך את הידע שלהם למוצר — קורס דיגיטלי במיתוג אישי שאפשר למכור, לשווק ולנהל בקלות. בלי תלות במפתחים: אתם מעלים תוכן, ואנחנו דואגים לחוויית הלמידה, לתשלומים ולשיווק.',
+    why:'יוצרי תוכן, מרצים ומומחים בוחרים בידע כדי להפוך את הידע שלהם למוצר — קורס דיגיטלי במיתוג אישי שאפשר למכור, לשווק ולנהל בקלות. בלי תלות במפתחים: אתם מעלים תוכן, ואנחנו דואגים לחוויית הלמידה, לתשלומים ולשיווק.',
     solutions:[
       'בניית קורס דיגיטלי במיתוג ובדומיין האישי שלכם',
       'מכירת קורסים עם מנגנון תשלומים מובנה',
@@ -352,8 +335,9 @@ CATEGORIES.forEach(cat=>{
 
   sec.innerHTML=`
     <div class="cat-head reveal">
-      <span class="cat-eyebrow">${esc(cat.title)}</span>
-      <h2>למה ${esc(cat.title)} בוחרים ב-יֵדע</h2>
+      <h2 class="cat-name">${esc(cat.title)}</h2>
+      <span class="cat-line"></span>
+      <p class="cat-sub">למה ${esc(cat.title)} בוחרים בידע</p>
     </div>
     <div class="cat-intro">
       <div class="cat-why reveal">
