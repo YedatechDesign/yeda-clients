@@ -4,353 +4,275 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>הלקוחות של Yeda LMS — ארגונים, מכללות, עמותות ויוצרי תוכן</title>
-<meta name="description" content="מאות ארגונים, מכללות, עמותות ויוצרי תוכן מובילים בונים את חוויית הלמידה הדיגיטלית שלהם על Yeda LMS. הכירו את הלקוחות שלנו לפי קטגוריה — ולמה הם בוחרים בנו.">
+<meta name="description" content="ארגונים, מכללות, עמותות ויוצרי תוכן מובילים בונים את חוויית הלמידה הדיגיטלית שלהם על Yeda LMS. הכירו את הלקוחות שלנו — ולמה הם בוחרים בנו.">
 <meta name="keywords" content="Yeda LMS, לקוחות, ארגונים, מכללות, עמותות, יוצרי תוכן, מערכת ניהול למידה, קורסים דיגיטליים">
 <meta name="author" content="Yeda">
 <meta name="robots" content="index, follow">
 
-<!-- Open Graph -->
 <meta property="og:type" content="website">
 <meta property="og:title" content="הלקוחות של Yeda LMS">
-<meta property="og:description" content="מאות ארגונים, מכללות, עמותות ויוצרי תוכן מובילים בונים את חוויית הלמידה הדיגיטלית שלהם על Yeda LMS.">
-<meta property="og:image" content="assets/yeda-logo-blue.png">
+<meta property="og:description" content="ארגונים, מכללות, עמותות ויוצרי תוכן מובילים בוחרים ב-Yeda LMS.">
+<meta property="og:image" content="assets/yeda-logo.png">
 <meta property="og:url" content="https://yedalms.io">
 <meta property="og:locale" content="he_IL">
 <meta property="og:site_name" content="Yeda LMS">
-
-<!-- Twitter / X -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="הלקוחות של Yeda LMS">
-<meta name="twitter:description" content="מאות ארגונים, מכללות, עמותות ויוצרי תוכן מובילים בוחרים ב-Yeda LMS.">
-<meta name="twitter:image" content="assets/yeda-logo-blue.png">
 
 <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png">
 <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
 
-<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800&family=Heebo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 :root{
   --navy:#000F61;
   --blue:#0A59EB;
-  --blue-soft:#C4D8FD;
-  --blue-pale:#E8F0FE;
-  --blue-bg:#F6F9FF;
+  --orange:#F08700;
+  --pink:#F5A3AE;
   --text:#1B1B1E;
   --text-mid:#4A5578;
   --text-light:#8D96B2;
-  --border:#E6ECF7;
-  --r:12px;
-  --rs:8px;
-  --ease:cubic-bezier(.25,.46,.45,.94);
+  --border:#E8ECF7;
+  --bg:#FFFFFF;
+  --bg-soft:#F6F9FF;
+  --ease:cubic-bezier(.22,.61,.36,1);
+  --nav-h:72px;
 }
 html{scroll-behavior:smooth;font-size:16px}
 body{
-  font-family:'Heebo','Rubik',-apple-system,BlinkMacSystemFont,sans-serif;
-  background:#fff;
-  color:var(--text);
-  line-height:1.65;
-  -webkit-font-smoothing:antialiased;
-  -moz-osx-font-smoothing:grayscale;
+  font-family:'Rubik',-apple-system,BlinkMacSystemFont,sans-serif;
+  background:var(--bg);color:var(--text);line-height:1.65;
+  -webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;
   overflow-x:clip;
-  max-width:100vw;
 }
+a{text-decoration:none;color:inherit}
 
-/* Top bar */
-.top{
-  position:sticky;top:0;z-index:100;
-  background:rgba(255,255,255,.92);
-  backdrop-filter:blur(20px) saturate(180%);
+/* ═══════════ TOP NAV (horizontal) ═══════════ */
+.nav{
+  position:sticky;top:0;z-index:100;height:var(--nav-h);
+  background:rgba(255,255,255,.82);
+  backdrop-filter:blur(18px) saturate(180%);-webkit-backdrop-filter:blur(18px) saturate(180%);
   border-bottom:1px solid var(--border);
-  padding:14px 32px;
   display:flex;align-items:center;justify-content:space-between;
+  padding:0 clamp(16px,4vw,48px);gap:18px;
 }
-.top-brand{display:flex;align-items:center;gap:12px;text-decoration:none;transition:opacity .2s ease}
-.top-brand:hover{opacity:.75}
-.top-brand img{height:28px;width:auto;display:block;transition:transform .2s ease}
-.top-brand:hover img{transform:scale(1.05)}
-.top-brand .sep{width:1px;height:20px;background:var(--border)}
-.top-brand .label{font-size:.8rem;font-weight:600;color:var(--text-mid);letter-spacing:.02em}
-.top-meta{font-size:.78rem;color:var(--text-light);font-weight:500}
-
-.top-right{display:flex;align-items:center;gap:14px}
-.search-btn{
-  height:34px;
-  display:flex;align-items:center;justify-content:center;
-  background:var(--blue-bg);
-  border:1px solid var(--border);
-  border-radius:50%;width:34px;
-  color:var(--navy);cursor:pointer;
-  transition:.2s var(--ease);padding:0;
+.brand{display:flex;align-items:center;transition:transform .25s var(--ease)}
+.brand:hover{transform:scale(1.04)}
+.brand img{height:34px;width:auto;display:block}
+.nav-links{display:flex;align-items:center;gap:6px;overflow-x:auto;scrollbar-width:none}
+.nav-links::-webkit-scrollbar{display:none}
+.nav-links a{
+  position:relative;white-space:nowrap;
+  padding:8px 16px;border-radius:9999px;
+  font-size:.95rem;font-weight:600;color:var(--text-mid);
+  transition:.22s var(--ease);
 }
-.search-btn:hover{background:var(--blue-soft);border-color:var(--blue-soft)}
-.search-btn svg{width:16px;height:16px}
-.search-btn kbd{
-  display:none;margin-right:6px;padding:1px 5px;
-  font-family:'Rubik',monospace;font-size:.68rem;
-  background:#fff;border:1px solid var(--border);border-radius:4px;color:var(--text-light);
+.nav-links a:hover{color:var(--navy);background:var(--bg-soft)}
+.nav-links a.active{color:#fff;background:var(--navy)}
+.nav-cta{
+  color:var(--blue)!important;background:none!important;
+  border:1.5px solid var(--blue);font-weight:700!important;
 }
-@media(min-width:720px){
-  .search-btn{width:auto;padding:0 12px;border-radius:18px;gap:6px}
-  .search-btn kbd{display:inline-flex;align-items:center}
+.nav-cta:hover{color:#fff!important;background:var(--blue)!important}
+@media(max-width:640px){
+  .nav{padding:0 14px;gap:10px}
+  .brand img{height:28px}
+  .nav-links a{padding:7px 13px;font-size:.88rem}
+  .nav-cta{display:none}
 }
 
-/* Search panel */
-.search-panel{
-  position:fixed;top:0;left:0;right:0;z-index:200;
-  background:rgba(255,255,255,.98);
-  backdrop-filter:blur(24px) saturate(180%);
-  border-bottom:1px solid var(--border);
-  padding:14px 24px;display:none;align-items:center;gap:14px;
-  box-shadow:0 8px 24px rgba(0,15,97,.06);
+/* ═══════════ HERO ═══════════ */
+.hero{
+  position:relative;overflow:hidden;
+  background:linear-gradient(180deg,var(--bg-soft),#fff 70%);
+  padding:clamp(56px,9vw,110px) clamp(20px,5vw,48px) clamp(48px,7vw,84px);
+  text-align:center;
 }
-.search-panel.open{display:flex}
-.search-panel svg.ic{width:18px;height:18px;color:var(--navy);flex-shrink:0}
-.search-panel input{
-  flex:1;min-width:0;border:none;outline:none;background:none;
-  font-family:inherit;font-size:1rem;color:var(--text);padding:6px 0;
+.hero .blob{position:absolute;border-radius:50%;filter:blur(60px);opacity:.5;pointer-events:none;z-index:0}
+.hero .blob.b1{width:340px;height:340px;background:radial-gradient(circle,#FDD79A,#F0870033);top:-90px;right:-60px;animation:float1 12s ease-in-out infinite}
+.hero .blob.b2{width:300px;height:300px;background:radial-gradient(circle,#9CC4FF,#0A59EB22);bottom:-110px;left:-50px;animation:float2 14s ease-in-out infinite}
+.hero .blob.b3{width:200px;height:200px;background:radial-gradient(circle,#F5A3AE66,#F5A3AE00);top:30px;left:12%;animation:float1 16s ease-in-out infinite}
+@keyframes float1{0%,100%{transform:translateY(0) translateX(0)}50%{transform:translateY(24px) translateX(-16px)}}
+@keyframes float2{0%,100%{transform:translateY(0) translateX(0)}50%{transform:translateY(-26px) translateX(18px)}}
+.hero-inner{position:relative;z-index:1;max-width:820px;margin:0 auto}
+.eyebrow{
+  display:inline-block;font-size:.82rem;font-weight:700;letter-spacing:.06em;
+  color:var(--orange);background:#FFF3E0;border:1px solid #FFE3BD;
+  padding:6px 16px;border-radius:9999px;margin-bottom:22px;
 }
-.search-panel input::placeholder{color:var(--text-light)}
-.search-panel .count{font-size:.82rem;color:var(--text-light);white-space:nowrap}
-.search-panel .close-btn{
-  width:30px;height:30px;display:flex;align-items:center;justify-content:center;
-  background:none;border:none;cursor:pointer;color:var(--text-light);
-  font-size:20px;line-height:1;padding:0;transition:.15s;
-}
-.search-panel .close-btn:hover{color:var(--navy)}
-
-/* Layout */
-.wrap{display:grid;grid-template-columns:260px minmax(0,1fr);max-width:1240px;margin:0 auto;gap:40px;padding:0 24px}
-@media(max-width:980px){
-  .wrap{grid-template-columns:1fr;padding:0 18px;gap:20px}
-  .sidebar{display:none}
-  .top{padding:12px 18px}
-}
-@media(max-width:560px){
-  .wrap{padding:0 14px}
-  .top{padding:10px 14px}
-  .top-brand .label{display:none}
-}
-
-/* Sidebar TOC */
-.sidebar{
-  position:sticky;top:76px;align-self:start;
-  max-height:calc(100vh - 96px);overflow-y:auto;
-  padding:40px 0 40px;font-size:.9rem;
-  scrollbar-width:thin;scrollbar-color:var(--blue-soft) transparent;
-}
-.sidebar::-webkit-scrollbar{width:5px}
-.sidebar::-webkit-scrollbar-thumb{background:var(--blue-soft);border-radius:3px}
-.sidebar h5{
-  font-size:.68rem;text-transform:uppercase;letter-spacing:.1em;
-  color:var(--text-light);font-weight:700;margin-bottom:14px;padding-right:12px;
-}
-.sidebar a{
-  display:flex;align-items:center;justify-content:space-between;gap:8px;
-  padding:9px 12px;color:var(--text-mid);text-decoration:none;
-  border-right:2px solid transparent;transition:all .2s var(--ease);
-  line-height:1.45;font-weight:600;
-}
-.sidebar a:hover{color:var(--navy);background:var(--blue-bg);border-right-color:var(--blue-soft)}
-.sidebar a.active{color:var(--navy);border-right-color:var(--navy);background:var(--blue-bg)}
-.sidebar a .num{
-  font-size:.72rem;font-weight:700;color:var(--text-light);
-  background:var(--blue-bg);border:1px solid var(--border);
-  border-radius:20px;padding:1px 8px;min-width:30px;text-align:center;
-}
-.sidebar a.active .num,.sidebar a:hover .num{color:var(--navy);border-color:var(--blue-soft)}
-
-/* Main */
-main{padding:40px 0 80px;min-width:0;max-width:100%;overflow-wrap:break-word}
-.hero{padding:30px 0 40px;border-bottom:1px solid var(--border);margin-bottom:40px}
 .hero h1{
-  font-size:clamp(2rem,4.2vw,2.8rem);font-weight:800;color:var(--navy);
-  line-height:1.15;letter-spacing:-.01em;margin-bottom:16px;
+  font-size:clamp(2.3rem,6vw,4rem);font-weight:900;color:var(--navy);
+  line-height:1.1;letter-spacing:-.02em;margin-bottom:20px;
 }
-.hero .lead{font-size:1.1rem;color:var(--text-mid);max-width:720px;font-weight:400;line-height:1.7}
-.hero .stats{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
-.hero .stat{
-  display:inline-flex;gap:8px;align-items:baseline;
-  padding:7px 16px;background:var(--blue-bg);border:1px solid var(--border);
-  border-radius:50px;font-size:.82rem;color:var(--text-mid);
+.hero h1 .grad{
+  background:linear-gradient(120deg,var(--blue),var(--orange));
+  -webkit-background-clip:text;background-clip:text;color:transparent;
 }
-.hero .stat b{color:var(--navy);font-weight:800;font-size:1rem}
+.hero .lead{font-size:clamp(1.02rem,2.4vw,1.25rem);color:var(--text-mid);max-width:680px;margin:0 auto 30px;font-weight:400}
+.hero-cta{
+  display:inline-flex;align-items:center;gap:8px;
+  padding:13px 30px;border-radius:9999px;
+  background:var(--navy);color:#fff;font-weight:700;font-size:1rem;
+  transition:.25s var(--ease);box-shadow:0 10px 30px rgba(0,15,97,.18);
+}
+.hero-cta:hover{background:var(--blue);transform:translateY(-3px);box-shadow:0 16px 38px rgba(10,89,235,.28)}
 
-/* Intro block */
-.intro-block{
-  background:var(--blue-bg);border:1px solid var(--border);border-radius:var(--r);
-  padding:26px 30px;margin-bottom:40px;
+/* ═══════════ SECTIONS ═══════════ */
+.container{max-width:1240px;margin:0 auto;padding:0 clamp(20px,5vw,48px)}
+.cat-section{padding:clamp(54px,8vw,90px) 0 0;scroll-margin-top:var(--nav-h)}
+.cat-section:last-of-type{padding-bottom:20px}
+.cat-eyebrow{
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:.8rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;
+  color:var(--accent);margin-bottom:10px;
 }
-.intro-block p{font-size:1rem;color:var(--text);margin-bottom:0;line-height:1.75}
-.intro-block b{color:var(--navy);font-weight:700}
-
-/* Section heading */
-.cat-section{scroll-margin-top:80px;padding-top:8px}
-.cat-head{
-  display:flex;align-items:center;gap:14px;flex-wrap:wrap;
-  margin:64px 0 8px;padding-top:28px;border-top:1px solid var(--border);
-  scroll-margin-top:80px;
-}
-.cat-section:first-of-type .cat-head{margin-top:0;border-top:none;padding-top:0}
-.cat-head h2{font-size:1.9rem;font-weight:800;color:var(--navy);letter-spacing:-.01em}
-.cat-head .badge{
-  font-size:.8rem;font-weight:700;color:var(--blue);
-  background:var(--blue-pale);border-radius:50px;padding:4px 14px;
+.cat-eyebrow::before{content:"";width:26px;height:3px;border-radius:3px;background:var(--accent)}
+.cat-head h2{
+  font-size:clamp(1.7rem,4vw,2.5rem);font-weight:800;color:var(--navy);
+  letter-spacing:-.015em;line-height:1.15;
 }
 
-/* Category intro: why + solutions */
+/* why + solutions */
 .cat-intro{
-  display:grid;grid-template-columns:1.2fr 1fr;gap:24px;
-  background:var(--blue-bg);border:1px solid var(--border);
-  border-radius:var(--r);padding:26px 30px;margin:22px 0 34px;
+  display:grid;grid-template-columns:1.15fr 1fr;gap:30px;align-items:stretch;
+  margin:26px 0 40px;
 }
-@media(max-width:760px){.cat-intro{grid-template-columns:1fr;gap:18px;padding:22px}}
-.cat-why h3{font-size:1.18rem;font-weight:800;color:var(--navy);margin-bottom:12px;letter-spacing:-.01em}
-.cat-why h3 b{color:var(--blue)}
-.cat-why p{font-size:.97rem;color:var(--text-mid);line-height:1.75}
-.cat-solutions{border-right:1px solid var(--border);padding-right:24px}
-@media(max-width:760px){.cat-solutions{border-right:none;border-top:1px solid var(--border);padding-right:0;padding-top:18px}}
+@media(max-width:780px){.cat-intro{grid-template-columns:1fr;gap:18px}}
+.cat-why{
+  background:color-mix(in srgb, var(--accent) 6%, #fff);
+  border:1px solid color-mix(in srgb, var(--accent) 22%, var(--border));
+  border-radius:22px;padding:28px 30px;position:relative;overflow:hidden;
+}
+.cat-why::after{
+  content:"";position:absolute;top:-40px;left:-40px;width:130px;height:130px;border-radius:50%;
+  background:radial-gradient(circle,color-mix(in srgb,var(--accent) 30%,transparent),transparent 70%);
+}
+.cat-why h3{font-size:1.3rem;font-weight:800;color:var(--navy);margin-bottom:12px;position:relative}
+.cat-why h3 b{color:var(--accent)}
+.cat-why p{font-size:1rem;color:var(--text-mid);line-height:1.75;position:relative}
+.cat-solutions{
+  background:#fff;border:1px solid var(--border);border-radius:22px;padding:26px 30px;
+  box-shadow:0 8px 30px rgba(0,15,97,.05);
+}
 .cat-solutions h4{
-  font-size:.74rem;text-transform:uppercase;letter-spacing:.08em;
-  color:var(--text-light);font-weight:700;margin-bottom:14px;
+  font-size:.76rem;text-transform:uppercase;letter-spacing:.07em;
+  color:var(--text-light);font-weight:700;margin-bottom:16px;
 }
-.sol-list{list-style:none;display:flex;flex-direction:column;gap:10px}
-.sol-list li{
-  display:flex;gap:10px;align-items:flex-start;
-  font-size:.92rem;color:var(--text);line-height:1.5;font-weight:500;
+.sol-list{list-style:none;display:flex;flex-direction:column;gap:12px}
+.sol-list li{display:flex;gap:11px;align-items:flex-start;font-size:.95rem;color:var(--text);line-height:1.5;font-weight:500}
+.sol-list li .chk{
+  flex-shrink:0;width:22px;height:22px;border-radius:50%;margin-top:1px;
+  background:color-mix(in srgb,var(--accent) 15%,#fff);color:var(--accent);
+  display:flex;align-items:center;justify-content:center;
 }
-.sol-list li svg{width:17px;height:17px;flex-shrink:0;margin-top:3px;color:var(--blue)}
+.sol-list li .chk svg{width:13px;height:13px}
 
-/* Logo grid */
+/* logo grid — NO white box */
 .logo-grid{
-  display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));
-  gap:26px 22px;margin:8px 0 6px;
+  display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));
+  gap:clamp(28px,3.5vw,44px) clamp(20px,2.5vw,32px);margin-top:6px;
 }
-.logo-item{display:flex;flex-direction:column;align-items:center;text-align:center;transition:opacity .2s ease}
+.logo-item{display:flex;flex-direction:column;align-items:center;text-align:center}
 .logo-item.hide{display:none}
-.logo-card{
-  width:100%;height:120px;background:#fff;
-  border:1px solid var(--border);border-radius:16px;
-  box-shadow:0 4px 18px rgba(0,15,97,.05);
-  display:flex;align-items:center;justify-content:center;
-  padding:22px 20px;transition:.25s var(--ease);
+.logo-figure{
+  height:96px;width:100%;display:flex;align-items:center;justify-content:center;
+  margin-bottom:14px;
 }
-.logo-card img{max-width:84%;max-height:62px;width:auto;height:auto;object-fit:contain;display:block}
-.logo-item:hover .logo-card{border-color:var(--blue-soft);box-shadow:0 12px 30px rgba(0,15,97,.10);background:#fff}
-.logo-desc{margin-top:13px;font-size:.85rem;color:var(--text-mid);line-height:1.5;max-width:220px}
-.logo-name{display:block;font-weight:700;color:var(--navy);font-size:.88rem;margin-bottom:2px}
-
-.no-results{
-  display:none;text-align:center;color:var(--text-light);
-  padding:50px 0;font-size:.95rem;
+.logo-figure img{
+  max-width:80%;max-height:72px;width:auto;height:auto;object-fit:contain;display:block;
+  transition:transform .3s var(--ease),filter .3s var(--ease);
 }
-.no-results.show{display:block}
+.logo-item:hover .logo-figure img{transform:scale(1.09)}
+.logo-name{display:block;font-weight:700;color:var(--navy);font-size:.95rem;margin-bottom:5px;transition:color .25s var(--ease)}
+.logo-item:hover .logo-name{color:var(--accent)}
+.logo-desc{font-size:.85rem;color:var(--text-mid);line-height:1.5;max-width:230px}
 
-/* Footer */
+/* ═══════════ SCROLL REVEAL ═══════════ */
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .6s var(--ease),transform .6s var(--ease)}
+.reveal.in{opacity:1;transform:none}
+
+/* ═══════════ FOOTER ═══════════ */
 footer{
-  border-top:1px solid var(--border);padding:40px 32px;text-align:center;
-  color:var(--text-light);font-size:.86rem;margin-top:60px;line-height:1.8;
+  margin-top:clamp(60px,9vw,110px);
+  background:linear-gradient(135deg,var(--navy),#062a8f);
+  color:#fff;text-align:center;padding:clamp(50px,7vw,84px) 24px;
+  position:relative;overflow:hidden;
 }
-footer b{color:var(--navy);font-weight:700}
-footer a{color:var(--blue);text-decoration:none}
-footer a:hover{text-decoration:underline}
-.footer-cta{
-  display:inline-block;margin-top:6px;padding:11px 26px;
-  background:var(--navy);color:#fff;border-radius:50px;
-  font-weight:700;font-size:.9rem;text-decoration:none;
-  transition:.2s var(--ease);
+footer .fblob{position:absolute;width:280px;height:280px;border-radius:50%;filter:blur(70px);opacity:.4}
+footer .fblob.f1{background:#F08700;top:-100px;right:6%}
+footer .fblob.f2{background:#34e2e4;bottom:-120px;left:6%}
+footer .f-inner{position:relative;z-index:1;max-width:560px;margin:0 auto}
+footer h3{font-size:clamp(1.5rem,3.4vw,2.1rem);font-weight:800;margin-bottom:12px;line-height:1.2}
+footer p{color:#C4D2F5;font-size:1.02rem;margin-bottom:26px}
+footer .f-cta{
+  display:inline-flex;align-items:center;gap:8px;padding:14px 34px;border-radius:9999px;
+  background:#fff;color:var(--navy);font-weight:700;font-size:1.02rem;transition:.25s var(--ease);
 }
-.footer-cta:hover{background:var(--blue);text-decoration:none}
+footer .f-cta:hover{background:var(--orange);color:#fff;transform:translateY(-3px)}
+footer .f-meta{margin-top:30px;font-size:.84rem;color:#8FA3D9}
 
-/* Back-to-top */
+/* back-to-top */
 .top-btn{
-  position:fixed;bottom:24px;left:24px;z-index:50;
-  width:42px;height:42px;border-radius:50%;
-  background:var(--navy);color:#fff;border:none;cursor:pointer;
-  display:flex;align-items:center;justify-content:center;
-  box-shadow:0 6px 24px rgba(0,15,97,.2);
-  opacity:0;pointer-events:none;transition:.3s var(--ease);font-size:18px;
+  position:fixed;bottom:24px;left:24px;z-index:60;width:46px;height:46px;border-radius:50%;
+  background:var(--navy);color:#fff;border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;
+  box-shadow:0 8px 26px rgba(0,15,97,.25);opacity:0;pointer-events:none;transition:.3s var(--ease);font-size:19px;
 }
 .top-btn.v{opacity:1;pointer-events:auto}
-.top-btn:hover{background:var(--blue)}
-
-@media(max-width:560px){
-  .hero h1{font-size:1.8rem}
-  .cat-head h2{font-size:1.45rem}
-  .cat-head{margin:44px 0 8px;padding-top:22px}
-  main{padding:24px 0 60px}
-  .logo-grid{grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:20px 16px}
-  .logo-card{height:104px;padding:18px 16px}
-}
+.top-btn:hover{background:var(--blue);transform:translateY(-3px)}
 </style>
 </head>
 <body>
 
-<header class="top">
-  <a class="top-brand" href="https://yedalms.io">
-    <img src="assets/yeda-logo-blue.png" alt="Yeda">
-    <span class="sep"></span>
-    <span class="label">הלקוחות שלנו</span>
-  </a>
-  <div class="top-right">
-    <button class="search-btn" id="searchBtn" aria-label="חיפוש" title="חיפוש (⌘K)">
-      <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="9" r="6"/><path d="m18 18-4.5-4.5"/></svg>
-      <kbd>⌘K</kbd>
-    </button>
-    <span class="top-meta">מעודכן · יוני 2026</span>
-  </div>
+<!-- ═══ NAV ═══ -->
+<header class="nav">
+  <a class="brand" href="https://yedalms.io" aria-label="Yeda — yedalms.io"><img src="assets/yeda-logo.png" alt="Yeda"></a>
+  <nav class="nav-links" id="navLinks">
+    <a href="#organizations" data-target="organizations">ארגונים</a>
+    <a href="#colleges" data-target="colleges">מכללות</a>
+    <a href="#amutot" data-target="amutot">עמותות</a>
+    <a href="#creators" data-target="creators">יוצרי תוכן</a>
+    <a class="nav-cta" href="https://yedalms.io">yedalms.io</a>
+  </nav>
 </header>
 
-<div class="search-panel" id="searchPanel" role="search">
-  <svg class="ic" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="9" r="6"/><path d="m18 18-4.5-4.5"/></svg>
-  <input type="search" id="searchInput" placeholder="חיפוש לקוח לפי שם או תחום… (Esc לסגירה)" autocomplete="off" spellcheck="false">
-  <span class="count" id="searchCount"></span>
-  <button class="close-btn" id="searchClose" aria-label="סגירה" title="סגירה (Esc)">×</button>
-</div>
+<!-- ═══ HERO ═══ -->
+<section class="hero">
+  <span class="blob b1"></span><span class="blob b2"></span><span class="blob b3"></span>
+  <div class="hero-inner">
+    <span class="eyebrow">בין לקוחותינו</span>
+    <h1>הלקוחות <span class="grad">שלנו</span></h1>
+    <p class="lead">ארגונים, מכללות, עמותות ויוצרי תוכן מובילים בישראל ובעולם בונים את חוויית הלמידה הדיגיטלית שלהם על Yeda&nbsp;LMS — קמפוסים דיגיטליים, אקדמיות פנים-ארגוניות וקורסים אישיים, בפלטפורמה אחת.</p>
+    <a class="hero-cta" href="https://yedalms.io">להצטרף ללקוחות שלנו ←</a>
+  </div>
+</section>
 
-<div class="wrap" id="top">
+<!-- ═══ SECTIONS ═══ -->
+<div class="container" id="sections"></div>
 
-  <aside class="sidebar">
-    <h5>קטגוריות</h5>
-    <nav id="toc"></nav>
-  </aside>
-
-  <main>
-    <section class="hero">
-      <h1>הלקוחות שלנו</h1>
-      <p class="lead">ארגונים, מכללות, עמותות ויוצרי תוכן מובילים בישראל ובעולם בונים את חוויית הלמידה הדיגיטלית שלהם על <b style="color:var(--navy)">Yeda&nbsp;LMS</b> — קמפוסים דיגיטליים, אקדמיות פנים-ארגוניות וקורסים אישיים, בפלטפורמה אחת.</p>
-      <div class="stats" id="heroStats"></div>
-    </section>
-
-    <div class="intro-block">
-      <p>אנחנו קבוצת אנשי אקדמיה וטכנולוגיה שפיתחה מערכת להקמה, ניהול ושיווק של קורסים דיגיטליים — עם חוויית למידה מושלמת לסטודנטים וממשק ניהול נגיש למנהלים. ריכזנו כאן חלק מהלקוחות שאנחנו <b>גאים</b> לעבוד איתם, לפי סוג הארגון. בכל קטגוריה תמצאו <b>למה בוחרים בנו</b> ו<b>אילו פתרונות</b> אנחנו מציעים.</p>
-    </div>
-
-    <div id="sections"></div>
-
-    <footer>
-      <p><b>Yeda&nbsp;LMS</b> — הפלטפורמה לידע הדיגיטלי שלכם.</p>
-      <p>רוצים להצטרף ללקוחות שלנו?</p>
-      <a class="footer-cta" href="https://yedalms.io">דברו איתנו ←</a>
-    </footer>
-  </main>
-</div>
+<!-- ═══ FOOTER ═══ -->
+<footer>
+  <span class="fblob f1"></span><span class="fblob f2"></span>
+  <div class="f-inner reveal">
+    <h3>רוצים להצטרף ללקוחות שלנו?</h3>
+    <p>בואו נבנה יחד את חוויית הלמידה הדיגיטלית הבאה שלכם.</p>
+    <a class="f-cta" href="https://yedalms.io">דברו איתנו ←</a>
+    <div class="f-meta">Yeda&nbsp;LMS — הפלטפורמה לידע הדיגיטלי שלכם</div>
+  </div>
+</footer>
 
 <button class="top-btn" id="topBtn" aria-label="חזרה למעלה">↑</button>
 
 <script>
-/* ════════════ DATA ════════════ */
-const CHECK = '<svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m4 10.5 4 4 8-9"/></svg>';
+const CHECK = '<svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="m4 10.5 4 4 8-9"/></svg>';
 
 const CATEGORIES = [
   {
-    id: 'organizations',
-    title: 'ארגונים',
-    dir: 'logos/org',
-    why: 'ארגונים וחברות בוחרים ב-יֵדע כדי להפוך ידע פנים-ארגוני לחוויית למידה אחת, מסודרת ומדידה — להדריך עובדים, לקלוט מצטרפים חדשים ולשמר ידע מקצועי. הכול בפלטפורמה אחת, עם ממשק ניהול נגיש, מיתוג מלא של הארגון ובקרת ביצועים בזמן אמת.',
-    solutions: [
+    id:'organizations', title:'ארגונים', dir:'logos/org', accent:'#0A59EB',
+    why:'ארגונים וחברות בוחרים ב-יֵדע כדי להפוך ידע פנים-ארגוני לחוויית למידה אחת, מסודרת ומדידה — להדריך עובדים, לקלוט מצטרפים חדשים ולשמר ידע מקצועי. הכול בפלטפורמה אחת, עם ממשק ניהול נגיש, מיתוג מלא של הארגון ובקרת ביצועים בזמן אמת.',
+    solutions:[
       'הדרכות עובדים, אונבורדינג ורענוני ידע במערכת אחת',
       'למידה היברידית: וידאו, שידורים חיים, מבחנים וסקרים',
       'מעקב נוכחות, התקדמות וביצועים עם דוחות למנהלים',
@@ -358,7 +280,7 @@ const CATEGORIES = [
       'עוזר למידה מבוסס AI לתמיכה בעובדים',
       'אינטגרציה למערכות הארגון דרך API ו-Webhooks'
     ],
-    clients: [
+    clients:[
       {logo:'global-university-systems.png', name:'Global University Systems', desc:'The e-learning provider InterActive'},
       {logo:'thrivedx.png', name:'ThriveDX', desc:'חברה גלובלית המתמחה בהכשרות דיגיטליות'},
       {logo:'movement.png', name:'Movement', desc:'החברה המובילה בארץ לקידום בריאות בארגונים'},
@@ -380,11 +302,9 @@ const CATEGORIES = [
     ]
   },
   {
-    id: 'colleges',
-    title: 'מכללות',
-    dir: 'logos/college',
-    why: 'מכללות ומוסדות לימוד בוחרים ב-יֵדע כי הוא נותן קמפוס דיגיטלי שלם — הקמה, ניהול ושיווק של קורסים — עם חוויית למידה שנבנתה על בסיס שנות מחקר. הסטודנטים מקבלים חוויה מושלמת, והצוות האקדמי מקבל ממשק פשוט שמרכז קורסים, מרצים, תשלומים ותעודות במקום אחד.',
-    solutions: [
+    id:'colleges', title:'מכללות', dir:'logos/college', accent:'#F08700',
+    why:'מכללות ומוסדות לימוד בוחרים ב-יֵדע כי הוא נותן קמפוס דיגיטלי שלם — הקמה, ניהול ושיווק של קורסים — עם חוויית למידה שנבנתה על בסיס שנות מחקר. הסטודנטים מקבלים חוויה מושלמת, והצוות האקדמי מקבל ממשק פשוט שמרכז קורסים, מרצים, תשלומים ותעודות במקום אחד.',
+    solutions:[
       'הקמה וניהול של קורסים דיגיטליים, כיתות ומסלולי לימוד',
       'מנגנון תשלומים מובנה (Tranzila / Cardcom) ומכירת קורסים',
       'מבחנים, תרגולים, פורומים, תעודות ומעקב התקדמות',
@@ -392,7 +312,7 @@ const CATEGORIES = [
       'אתר לבן (White-Label) בדומיין ובמיתוג של המכללה',
       'עוזר למידה מבוסס AI ותוכן אינטראקטיבי'
     ],
-    clients: [
+    clients:[
       {logo:'success-college.png', name:'Success College', desc:'המכללה הדיגיטלית ללימודי הייטק ומנהל עסקים'},
       {logo:'ipc.png', name:'IPC', desc:'המכללה המובילה בתחום ההכשרות המקצועיות'},
       {logo:'highq.png', name:'HighQ', desc:'המרכז המוביל בארץ בתחום הכנה למבחן הפסיכומטרי'},
@@ -416,11 +336,9 @@ const CATEGORIES = [
     ]
   },
   {
-    id: 'amutot',
-    title: 'עמותות',
-    dir: 'logos/amutot',
-    why: 'עמותות וארגונים חברתיים בוחרים ב-יֵדע כדי להנגיש ידע לקהל רחב — מתנדבים, חברי קהילה וצוותים — בעלות נגישה ובניהול פשוט. המערכת מאפשרת להפיץ הדרכות, להכשיר מתנדבים ולשמר ידע ארגוני, בלי תלות במשאבים טכניים.',
-    solutions: [
+    id:'amutot', title:'עמותות', dir:'logos/amutot', accent:'#00B894',
+    why:'עמותות וארגונים חברתיים בוחרים ב-יֵדע כדי להנגיש ידע לקהל רחב — מתנדבים, חברי קהילה וצוותים — בעלות נגישה ובניהול פשוט. המערכת מאפשרת להפיץ הדרכות, להכשיר מתנדבים ולשמר ידע ארגוני, בלי תלות במשאבים טכניים.',
+    solutions:[
       'הכשרת מתנדבים, צוותים וקהילות בפלטפורמה אחת',
       'למידה היברידית: וידאו, שידורים חיים ומבחנים',
       'ניהול פשוט ונגיש ללא צורך בידע טכני',
@@ -428,7 +346,7 @@ const CATEGORIES = [
       'מיתוג העמותה ותוכן בעברית מלא (RTL)',
       'עלות נגישה המותאמת למגזר השלישי'
     ],
-    clients: [
+    clients:[
       {logo:'student-union.png', name:'התאחדות הסטודנטים', desc:'הארגון היציג של הסטודנטים והסטודנטיות בישראל'},
       {logo:'green-course.png', name:'מגמה ירוקה', desc:'ארגון המתנדבים הסביבתי הגדול בארץ'},
       {logo:'merhav.png', name:'מרחב', desc:'עמותת מרחב — התנועה לעירוניות בישראל'},
@@ -439,11 +357,9 @@ const CATEGORIES = [
     ]
   },
   {
-    id: 'creators',
-    title: 'יוצרי תוכן',
-    dir: 'logos/creators',
-    why: 'יוצרי תוכן, מרצים ומומחים בוחרים ב-יֵדע כדי להפוך את הידע שלהם למוצר — קורס דיגיטלי במיתוג אישי שאפשר למכור, לשווק ולנהל בקלות. בלי תלות במפתחים: אתם מעלים תוכן, ואנחנו דואגים לחוויית הלמידה, לתשלומים ולשיווק.',
-    solutions: [
+    id:'creators', title:'יוצרי תוכן', dir:'logos/creators', accent:'#A435F0',
+    why:'יוצרי תוכן, מרצים ומומחים בוחרים ב-יֵדע כדי להפוך את הידע שלהם למוצר — קורס דיגיטלי במיתוג אישי שאפשר למכור, לשווק ולנהל בקלות. בלי תלות במפתחים: אתם מעלים תוכן, ואנחנו דואגים לחוויית הלמידה, לתשלומים ולשיווק.',
+    solutions:[
       'בניית קורס דיגיטלי במיתוג ובדומיין האישי שלכם',
       'מכירת קורסים עם מנגנון תשלומים מובנה',
       'כלי שיווק, דפי נחיתה והרשמה',
@@ -451,7 +367,7 @@ const CATEGORIES = [
       'חוויית למידה מושלמת לתלמידים מכל מכשיר',
       'עוזר למידה מבוסס AI ותוכן אינטראקטיבי'
     ],
-    clients: [
+    clients:[
       {logo:'tom-graziani.png', name:'תום גרציאני', desc:'שחקן קולנוע, טלוויזיה ותיאטרון'},
       {logo:'my-medi.png', name:'מיכל ינאי · My Medi', desc:'שחקנית, מנחת טלוויזיה ויזמית מיינדפולנס מובילה'},
       {logo:'abu-tableh.png', name:'אבו טבלה', desc:'יוני שרון — סטנדאפיסט ומוזיקאי, יוצר הדמות "אבו טבלה"'},
@@ -461,51 +377,33 @@ const CATEGORIES = [
   }
 ];
 
-/* ════════════ RENDER ════════════ */
 function esc(s){return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
 
-const toc = document.getElementById('toc');
 const sections = document.getElementById('sections');
-const heroStats = document.getElementById('heroStats');
-
-CATEGORIES.forEach(cat => {
-  // sidebar
-  const a = document.createElement('a');
-  a.href = '#' + cat.id;
-  a.dataset.target = cat.id;
-  a.innerHTML = `<span>${esc(cat.title)}</span><span class="num">${cat.clients.length}</span>`;
-  toc.appendChild(a);
-
-  // hero stat
-  const st = document.createElement('span');
-  st.className = 'stat';
-  st.innerHTML = `<b>${cat.clients.length}</b> ${esc(cat.title)}`;
-  heroStats.appendChild(st);
-
-  // section
+CATEGORIES.forEach(cat=>{
   const sec = document.createElement('section');
-  sec.className = 'cat-section';
-  sec.id = cat.id;
+  sec.className='cat-section';sec.id=cat.id;sec.style.setProperty('--accent',cat.accent);
 
-  const cards = cat.clients.map(c => `
-    <div class="logo-item" data-search="${esc((c.name + ' ' + c.desc).toLowerCase())}">
-      <div class="logo-card"><img src="${cat.dir}/${c.logo}" alt="${esc(c.name)}" loading="lazy"></div>
-      <div class="logo-desc"><span class="logo-name">${esc(c.name)}</span>${esc(c.desc)}</div>
+  const cards = cat.clients.map((c,i)=>`
+    <div class="logo-item reveal" data-search="${esc((c.name+' '+c.desc).toLowerCase())}" style="transition-delay:${Math.min(i*40,320)}ms">
+      <div class="logo-figure"><img src="${cat.dir}/${c.logo}" alt="${esc(c.name)}" loading="lazy"></div>
+      <span class="logo-name">${esc(c.name)}</span>
+      <span class="logo-desc">${esc(c.desc)}</span>
     </div>`).join('');
 
-  const sols = cat.solutions.map(s => `<li>${CHECK}<span>${esc(s)}</span></li>`).join('');
+  const sols = cat.solutions.map(s=>`<li><span class="chk">${CHECK}</span><span>${esc(s)}</span></li>`).join('');
 
-  sec.innerHTML = `
-    <div class="cat-head">
-      <h2>${esc(cat.title)}</h2>
-      <span class="badge">${cat.clients.length} לקוחות</span>
+  sec.innerHTML=`
+    <div class="cat-head reveal">
+      <span class="cat-eyebrow">${esc(cat.title)}</span>
+      <h2>למה ${esc(cat.title)} בוחרים ב-יֵדע</h2>
     </div>
     <div class="cat-intro">
-      <div class="cat-why">
-        <h3>למה <b>${esc(cat.title)}</b> בוחרים בנו?</h3>
+      <div class="cat-why reveal">
+        <h3>למה בוחרים <b>בנו</b>?</h3>
         <p>${esc(cat.why)}</p>
       </div>
-      <div class="cat-solutions">
+      <div class="cat-solutions reveal">
         <h4>הפתרונות שלנו</h4>
         <ul class="sol-list">${sols}</ul>
       </div>
@@ -514,64 +412,27 @@ CATEGORIES.forEach(cat => {
   sections.appendChild(sec);
 });
 
-// no-results node
-const noRes = document.createElement('div');
-noRes.className = 'no-results';
-noRes.textContent = 'לא נמצאו לקוחות התואמים לחיפוש.';
-sections.appendChild(noRes);
+/* scroll reveal */
+const revObs = new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); revObs.unobserve(e.target);} });
+},{rootMargin:'0px 0px -8% 0px',threshold:.08});
+document.querySelectorAll('.reveal').forEach(el=>revObs.observe(el));
 
-/* ════════════ SEARCH / FILTER ════════════ */
-const searchBtn = document.getElementById('searchBtn');
-const searchPanel = document.getElementById('searchPanel');
-const searchInput = document.getElementById('searchInput');
-const searchClose = document.getElementById('searchClose');
-const searchCount = document.getElementById('searchCount');
-const allItems = () => Array.from(document.querySelectorAll('.logo-item'));
-
-function openSearch(){searchPanel.classList.add('open');searchInput.focus();}
-function closeSearch(){searchPanel.classList.remove('open');searchInput.value='';applyFilter('');}
-function applyFilter(q){
-  q = q.trim().toLowerCase();
-  let shown = 0;
-  CATEGORIES.forEach((cat,i)=>{
-    const sec = document.getElementById(cat.id);
-    const items = sec.querySelectorAll('.logo-item');
-    let secShown = 0;
-    items.forEach(it=>{
-      const match = !q || it.dataset.search.includes(q);
-      it.classList.toggle('hide', !match);
-      if(match) secShown++;
-    });
-    sec.style.display = (q && secShown===0) ? 'none' : '';
-    shown += secShown;
-  });
-  noRes.classList.toggle('show', q && shown===0);
-  searchCount.textContent = q ? (shown + ' תוצאות') : '';
-}
-
-searchBtn.addEventListener('click', openSearch);
-searchClose.addEventListener('click', closeSearch);
-searchInput.addEventListener('input', e=>applyFilter(e.target.value));
-document.addEventListener('keydown', e=>{
-  if((e.metaKey||e.ctrlKey) && e.key.toLowerCase()==='k'){e.preventDefault();openSearch();}
-  if(e.key==='Escape' && searchPanel.classList.contains('open')) closeSearch();
-});
-
-/* ════════════ ACTIVE TOC ON SCROLL ════════════ */
-const tocLinks = Array.from(toc.querySelectorAll('a'));
-const obs = new IntersectionObserver(entries=>{
+/* active nav on scroll */
+const navLinks = Array.from(document.querySelectorAll('#navLinks a[data-target]'));
+const navObs = new IntersectionObserver((entries)=>{
   entries.forEach(en=>{
     if(en.isIntersecting){
-      tocLinks.forEach(l=>l.classList.toggle('active', l.dataset.target===en.target.id));
+      navLinks.forEach(l=>l.classList.toggle('active', l.dataset.target===en.target.id));
     }
   });
-},{rootMargin:'-20% 0px -70% 0px'});
-CATEGORIES.forEach(c=>obs.observe(document.getElementById(c.id)));
+},{rootMargin:'-45% 0px -50% 0px'});
+CATEGORIES.forEach(c=>navObs.observe(document.getElementById(c.id)));
 
-/* ════════════ BACK TO TOP ════════════ */
-const topBtn = document.getElementById('topBtn');
-window.addEventListener('scroll', ()=>topBtn.classList.toggle('v', window.scrollY>500));
-topBtn.addEventListener('click', ()=>window.scrollTo({top:0,behavior:'smooth'}));
+/* back to top */
+const topBtn=document.getElementById('topBtn');
+window.addEventListener('scroll',()=>topBtn.classList.toggle('v',window.scrollY>600));
+topBtn.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
 </script>
 </body>
 </html>
