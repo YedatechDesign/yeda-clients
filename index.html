@@ -29,14 +29,16 @@
 *{margin:0;padding:0;box-sizing:border-box}
 :root{
   --navy:#000F61;
+  --navy-soft:#404B88;
   --blue:#0A59EB;
-  --blue-bright:#2E7BFF;
-  --blue-300:#9CC4FF;
+  --blue-700:#073B9D;
+  --blue-500:#2870F6;
+  --blue-300:#76A4F9;
   --blue-200:#C4D8FD;
-  --blue-100:#E8F0FE;
+  --hl:#C4D8FD;
   --text:#1B1B1E;
-  --text-mid:#4A5578;
-  --text-light:#8D96B2;
+  --text-mid:#404B88;
+  --text-light:#A1A5C0;
   --border:#E8ECF7;
   --bg:#FFFFFF;
   --bg-soft:#F6F9FF;
@@ -95,13 +97,12 @@ a{text-decoration:none;color:inherit}
   font-size:clamp(2.7rem,7.4vw,4.8rem);font-weight:900;color:var(--navy);
   line-height:1.04;letter-spacing:-.025em;margin-bottom:24px;
 }
-.hero h1 .grad{
-  background:linear-gradient(110deg,var(--blue),var(--blue-bright) 45%,var(--blue));
-  background-size:220% auto;-webkit-background-clip:text;background-clip:text;color:transparent;
-  animation:shine 7s linear infinite;
+.hero h1 .hl{
+  background:var(--hl);color:var(--navy);
+  padding:0 .16em;border-radius:3px;
+  -webkit-box-decoration-break:clone;box-decoration-break:clone;
 }
-@keyframes shine{to{background-position:220% center}}
-.hero .lead{font-size:clamp(1.05rem,2.4vw,1.3rem);color:var(--text-mid);max-width:700px;margin:0 auto;font-weight:400;line-height:1.7}
+.hero .lead{font-size:clamp(1.05rem,2.4vw,1.3rem);color:var(--text);max-width:700px;margin:0 auto;font-weight:400;line-height:1.7}
 
 /* ═══════════ SECTIONS ═══════════ */
 .container{max-width:1240px;margin:0 auto;padding:0 clamp(20px,5vw,48px)}
@@ -121,15 +122,11 @@ a{text-decoration:none;color:inherit}
 .cat-why{
   background:var(--bg-soft);
   border:1px solid var(--border);
-  border-radius:22px;padding:28px 30px;position:relative;overflow:hidden;
+  border-radius:22px;padding:28px 30px;
 }
-.cat-why::after{
-  content:"";position:absolute;top:-44px;left:-44px;width:140px;height:140px;border-radius:50%;
-  background:radial-gradient(circle,rgba(10,89,235,.16),transparent 70%);
-}
-.cat-why h3{font-size:1.3rem;font-weight:800;color:var(--navy);margin-bottom:12px;position:relative}
-.cat-why h3 b{color:var(--blue)}
-.cat-why p{font-size:1rem;color:var(--text-mid);line-height:1.75;position:relative}
+.cat-why h3{font-size:1.3rem;font-weight:800;color:var(--navy);margin-bottom:12px}
+.cat-why h3 b{background:var(--hl);color:var(--navy);padding:0 .16em;border-radius:3px;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.cat-why p{font-size:1rem;color:var(--text);line-height:1.75}
 .cat-solutions{
   background:#fff;border:1px solid var(--border);border-radius:22px;padding:26px 30px;
   box-shadow:0 8px 30px rgba(0,15,97,.05);
@@ -142,7 +139,7 @@ a{text-decoration:none;color:inherit}
 .sol-list li{display:flex;gap:11px;align-items:flex-start;font-size:.95rem;color:var(--text);line-height:1.5;font-weight:500}
 .sol-list li .chk{
   flex-shrink:0;width:22px;height:22px;border-radius:50%;margin-top:1px;
-  background:var(--blue-100);color:var(--blue);
+  background:var(--blue-200);color:var(--blue);
   display:flex;align-items:center;justify-content:center;
 }
 .sol-list li .chk svg{width:13px;height:13px}
@@ -162,7 +159,7 @@ a{text-decoration:none;color:inherit}
 .logo-item:hover .logo-figure img{transform:scale(1.09)}
 .logo-name{display:block;font-weight:700;color:var(--navy);font-size:.95rem;margin-bottom:5px;transition:color .25s var(--ease)}
 .logo-item:hover .logo-name{color:var(--blue)}
-.logo-desc{font-size:.85rem;color:var(--text-mid);line-height:1.5;max-width:230px}
+.logo-desc{font-size:.85rem;color:var(--text-light);line-height:1.5;max-width:230px}
 
 /* ═══════════ SCROLL REVEAL ═══════════ */
 .reveal{opacity:0;transform:translateY(26px);transition:opacity .6s var(--ease),transform .6s var(--ease)}
@@ -195,7 +192,7 @@ a{text-decoration:none;color:inherit}
 <section class="hero">
   <div class="hero-inner">
     <div class="accent-line"></div>
-    <h1>הלקוחות <span class="grad">שלנו</span></h1>
+    <h1>הלקוחות <span class="hl">שלנו</span></h1>
     <p class="lead">ארגונים, מכללות, עמותות ויוצרי תוכן מובילים בישראל ובעולם בונים את חוויית הלמידה הדיגיטלית שלהם על Yeda&nbsp;LMS — קמפוסים דיגיטליים, אקדמיות פנים-ארגוניות וקורסים אישיים, בפלטפורמה אחת.</p>
   </div>
 </section>
